@@ -19,7 +19,7 @@ See the full design document **[here](doc/Design.md)**
 
 ## Run Instructions
 1. Clone the repository  
-2. Open `SendMoney.xcodeproj`  
+2. Open `MayaExam.xcodeproj`  
 3. Build & run (`⌘R`)  
 4. Log in using the demo credentials: NOTE: all other username and passwords are not accepted.
    - **Username:** `demo`  
