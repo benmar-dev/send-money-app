@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D04C59382EEA848A00159115 /* LocalAPIDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C54B2EE95DCA00E90BA1 /* LocalAPIDataSource.swift */; };
+		D04C593C2EEA859800159115 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C593B2EEA859600159115 /* SessionStore.swift */; };
+		D04C593E2EEA85B900159115 /* WalletStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C593D2EEA85B400159115 /* WalletStore.swift */; };
+		D04C59402EEA870F00159115 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C593F2EEA870C00159115 /* AppConfig.swift */; };
+		D0E2C4B92EE8211700E90BA1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4B72EE8204200E90BA1 /* MainView.swift */; };
+		D0E2C4BA2EE8211C00E90BA1 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4B82EE8207E00E90BA1 /* DashboardView.swift */; };
+		D0E2C4BE2EE8243A00E90BA1 /* AuthConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D0E2C4BD2EE8243A00E90BA1 /* AuthConfig.xcconfig */; };
+		D0E2C4C22EE8260900E90BA1 /* AuthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4C12EE8260400E90BA1 /* AuthConfig.swift */; };
+		D0E2C4C62EE8270400E90BA1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4C52EE8270100E90BA1 /* AuthService.swift */; };
+		D0E2C4C82EE82BC700E90BA1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4C72EE82BC400E90BA1 /* LoginView.swift */; };
+		D0E2C4CA2EE82BCE00E90BA1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4C92EE82BCB00E90BA1 /* LoginViewModel.swift */; };
+		D0E2C4CD2EE8337C00E90BA1 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4CC2EE8337A00E90BA1 /* DataStore.swift */; };
+		D0E2C4CF2EE8360C00E90BA1 /* KeychainSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4CE2EE8360300E90BA1 /* KeychainSession.swift */; };
+		D0E2C4D12EE83A2200E90BA1 /* DataStore+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4D02EE83A1700E90BA1 /* DataStore+Auth.swift */; };
+		D0E2C4D32EE8402E00E90BA1 /* SendMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4D22EE8402D00E90BA1 /* SendMoneyView.swift */; };
+		D0E2C4D52EE8404000E90BA1 /* TransactionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4D42EE8403F00E90BA1 /* TransactionHistoryView.swift */; };
+		D0E2C4D72EE84B6600E90BA1 /* DashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4D62EE84B6200E90BA1 /* DashboardCard.swift */; };
+		D0E2C4D92EE84BD100E90BA1 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4D82EE84BCC00E90BA1 /* DashboardViewModel.swift */; };
+		D0E2C4DB2EE84D9200E90BA1 /* DashboardFeaturePlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4DA2EE84D8600E90BA1 /* DashboardFeaturePlaceholder.swift */; };
+		D0E2C4DE2EE9088600E90BA1 /* DefaultsWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4DD2EE9088000E90BA1 /* DefaultsWallet.swift */; };
+		D0E2C4E02EE914D700E90BA1 /* SendMoneyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4DF2EE914D700E90BA1 /* SendMoneyViewModel.swift */; };
+		D0E2C4E22EE91CDF00E90BA1 /* DataStore+SendMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4E12EE91CD700E90BA1 /* DataStore+SendMoney.swift */; };
+		D0E2C4E42EE92B9A00E90BA1 /* SwiftDataConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4E32EE92B9500E90BA1 /* SwiftDataConfig.swift */; };
+		D0E2C4E62EE92BB700E90BA1 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4E52EE92BB300E90BA1 /* Transaction.swift */; };
+		D0E2C4E82EE9329B00E90BA1 /* PostTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4E72EE9329400E90BA1 /* PostTransactionView.swift */; };
+		D0E2C4EB2EE9364B00E90BA1 /* Decimal+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4EA2EE9364400E90BA1 /* Decimal+Utility.swift */; };
+		D0E2C4ED2EE9369C00E90BA1 /* Date+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4EC2EE9369800E90BA1 /* Date+Utility.swift */; };
+		D0E2C4EF2EE938DC00E90BA1 /* TransactionHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4EE2EE938D600E90BA1 /* TransactionHistoryViewModel.swift */; };
+		D0E2C4F12EE93B0D00E90BA1 /* DataStore+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4F02EE93B0600E90BA1 /* DataStore+Transaction.swift */; };
+		D0E2C4F32EE93E8F00E90BA1 /* TransactionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4F22EE93E8B00E90BA1 /* TransactionDTO.swift */; };
+		D0E2C4F52EE93FF600E90BA1 /* WalletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C4F42EE93FF300E90BA1 /* WalletService.swift */; };
+		D0E2C53C2EE9482C00E90BA1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C53B2EE9482900E90BA1 /* APIService.swift */; };
+		D0E2C53F2EE9488600E90BA1 /* APIDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C53E2EE9488200E90BA1 /* APIDataSource.swift */; };
+		D0E2C5412EE94D5A00E90BA1 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C5402EE94D5500E90BA1 /* URLRequestBuilder.swift */; };
+		D0E2C5482EE95D8600E90BA1 /* RemoteAPIDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C5472EE95D7900E90BA1 /* RemoteAPIDataSource.swift */; };
+		D0E2C54E2EE98C0A00E90BA1 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C54D2EE98C0600E90BA1 /* AuthResponse.swift */; };
+		D0E2C5502EE9900B00E90BA1 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E2C54F2EE9900A00E90BA1 /* APIError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0E2C5592EE9981500E90BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0E2C45B2EE81E2C00E90BA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E2C4622EE81E2C00E90BA1;
+			remoteInfo = MayaExam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D04C593B2EEA859600159115 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		D04C593D2EEA85B400159115 /* WalletStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletStore.swift; sourceTree = "<group>"; };
+		D04C593F2EEA870C00159115 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		D0E2C4632EE81E2C00E90BA1 /* MayaExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MayaExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E2C4B72EE8204200E90BA1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D0E2C4B82EE8207E00E90BA1 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		D0E2C4BD2EE8243A00E90BA1 /* AuthConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AuthConfig.xcconfig; sourceTree = "<group>"; };
+		D0E2C4C12EE8260400E90BA1 /* AuthConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfig.swift; sourceTree = "<group>"; };
+		D0E2C4C52EE8270100E90BA1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D0E2C4C72EE82BC400E90BA1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D0E2C4C92EE82BCB00E90BA1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D0E2C4CC2EE8337A00E90BA1 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		D0E2C4CE2EE8360300E90BA1 /* KeychainSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSession.swift; sourceTree = "<group>"; };
+		D0E2C4D02EE83A1700E90BA1 /* DataStore+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataStore+Auth.swift"; sourceTree = "<group>"; };
+		D0E2C4D22EE8402D00E90BA1 /* SendMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyView.swift; sourceTree = "<group>"; };
+		D0E2C4D42EE8403F00E90BA1 /* TransactionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryView.swift; sourceTree = "<group>"; };
+		D0E2C4D62EE84B6200E90BA1 /* DashboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCard.swift; sourceTree = "<group>"; };
+		D0E2C4D82EE84BCC00E90BA1 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		D0E2C4DA2EE84D8600E90BA1 /* DashboardFeaturePlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFeaturePlaceholder.swift; sourceTree = "<group>"; };
+		D0E2C4DD2EE9088000E90BA1 /* DefaultsWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsWallet.swift; sourceTree = "<group>"; };
+		D0E2C4DF2EE914D700E90BA1 /* SendMoneyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyViewModel.swift; sourceTree = "<group>"; };
+		D0E2C4E12EE91CD700E90BA1 /* DataStore+SendMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataStore+SendMoney.swift"; sourceTree = "<group>"; };
+		D0E2C4E32EE92B9500E90BA1 /* SwiftDataConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataConfig.swift; sourceTree = "<group>"; };
+		D0E2C4E52EE92BB300E90BA1 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		D0E2C4E72EE9329400E90BA1 /* PostTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTransactionView.swift; sourceTree = "<group>"; };
+		D0E2C4EA2EE9364400E90BA1 /* Decimal+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utility.swift"; sourceTree = "<group>"; };
+		D0E2C4EC2EE9369800E90BA1 /* Date+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utility.swift"; sourceTree = "<group>"; };
+		D0E2C4EE2EE938D600E90BA1 /* TransactionHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryViewModel.swift; sourceTree = "<group>"; };
+		D0E2C4F02EE93B0600E90BA1 /* DataStore+Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataStore+Transaction.swift"; sourceTree = "<group>"; };
+		D0E2C4F22EE93E8B00E90BA1 /* TransactionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDTO.swift; sourceTree = "<group>"; };
+		D0E2C4F42EE93FF300E90BA1 /* WalletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletService.swift; sourceTree = "<group>"; };
+		D0E2C53B2EE9482900E90BA1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		D0E2C53E2EE9488200E90BA1 /* APIDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataSource.swift; sourceTree = "<group>"; };
+		D0E2C5402EE94D5500E90BA1 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		D0E2C5472EE95D7900E90BA1 /* RemoteAPIDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAPIDataSource.swift; sourceTree = "<group>"; };
+		D0E2C54B2EE95DCA00E90BA1 /* LocalAPIDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAPIDataSource.swift; sourceTree = "<group>"; };
+		D0E2C54D2EE98C0600E90BA1 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		D0E2C54F2EE9900A00E90BA1 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		D0E2C5552EE9981500E90BA1 /* MayaExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayaExamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D0E2C4C02EE824DA00E90BA1 /* Exceptions for "MayaExam" folder in "MayaExam" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D0E2C4622EE81E2C00E90BA1 /* MayaExam */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D0E2C4652EE81E2C00E90BA1 /* MayaExam */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D0E2C4C02EE824DA00E90BA1 /* Exceptions for "MayaExam" folder in "MayaExam" target */,
+			);
+			path = MayaExam;
+			sourceTree = "<group>";
+		};
+		D0E2C5562EE9981500E90BA1 /* MayaExamTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MayaExamTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0E2C4602EE81E2C00E90BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E2C5522EE9981500E90BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D04C59392EEA856B00159115 /* SessionStore */ = {
+			isa = PBXGroup;
+			children = (
+				D04C593B2EEA859600159115 /* SessionStore.swift */,
+				D0E2C4CE2EE8360300E90BA1 /* KeychainSession.swift */,
+			);
+			path = SessionStore;
+			sourceTree = "<group>";
+		};
+		D04C593A2EEA857600159115 /* WalletStore */ = {
+			isa = PBXGroup;
+			children = (
+				D04C593D2EEA85B400159115 /* WalletStore.swift */,
+				D0E2C4DD2EE9088000E90BA1 /* DefaultsWallet.swift */,
+			);
+			path = WalletStore;
+			sourceTree = "<group>";
+		};
+		D0E2C45A2EE81E2C00E90BA1 = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4752EE81E4200E90BA1 /* Features */,
+				D0E2C4652EE81E2C00E90BA1 /* MayaExam */,
+				D0E2C5562EE9981500E90BA1 /* MayaExamTests */,
+				D0E2C4642EE81E2C00E90BA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0E2C4642EE81E2C00E90BA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4632EE81E2C00E90BA1 /* MayaExam.app */,
+				D0E2C5552EE9981500E90BA1 /* MayaExamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0E2C4752EE81E4200E90BA1 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4BB2EE823F800E90BA1 /* Config */,
+				D0E2C47B2EE8201D00E90BA1 /* Main */,
+				D0E2C4762EE81E4D00E90BA1 /* Login */,
+				D0E2C4782EE81F8400E90BA1 /* Dashboard */,
+				D0E2C4792EE81F9400E90BA1 /* SendMoney */,
+				D0E2C47A2EE81FB100E90BA1 /* TransactionHistory */,
+				D0E2C4DC2EE9023900E90BA1 /* Models */,
+				D0E2C4C42EE826F600E90BA1 /* Service */,
+				D0E2C4CB2EE8336A00E90BA1 /* DataStore */,
+				D0E2C4E92EE9361900E90BA1 /* Utilities */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D0E2C4762EE81E4D00E90BA1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4C92EE82BCB00E90BA1 /* LoginViewModel.swift */,
+				D0E2C4C72EE82BC400E90BA1 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D0E2C4782EE81F8400E90BA1 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4D82EE84BCC00E90BA1 /* DashboardViewModel.swift */,
+				D0E2C4B82EE8207E00E90BA1 /* DashboardView.swift */,
+				D0E2C4D62EE84B6200E90BA1 /* DashboardCard.swift */,
+				D0E2C4DA2EE84D8600E90BA1 /* DashboardFeaturePlaceholder.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		D0E2C4792EE81F9400E90BA1 /* SendMoney */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4DF2EE914D700E90BA1 /* SendMoneyViewModel.swift */,
+				D0E2C4D22EE8402D00E90BA1 /* SendMoneyView.swift */,
+				D0E2C4E72EE9329400E90BA1 /* PostTransactionView.swift */,
+			);
+			path = SendMoney;
+			sourceTree = "<group>";
+		};
+		D0E2C47A2EE81FB100E90BA1 /* TransactionHistory */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4EE2EE938D600E90BA1 /* TransactionHistoryViewModel.swift */,
+				D0E2C4D42EE8403F00E90BA1 /* TransactionHistoryView.swift */,
+			);
+			path = TransactionHistory;
+			sourceTree = "<group>";
+		};
+		D0E2C47B2EE8201D00E90BA1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4B72EE8204200E90BA1 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D0E2C4BB2EE823F800E90BA1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4BD2EE8243A00E90BA1 /* AuthConfig.xcconfig */,
+				D0E2C4C12EE8260400E90BA1 /* AuthConfig.swift */,
+				D0E2C4E32EE92B9500E90BA1 /* SwiftDataConfig.swift */,
+				D04C593F2EEA870C00159115 /* AppConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D0E2C4C42EE826F600E90BA1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C53D2EE9487900E90BA1 /* APIService */,
+				D0E2C5462EE95D6000E90BA1 /* APIDataSource */,
+				D0E2C4C52EE8270100E90BA1 /* AuthService.swift */,
+				D0E2C4F42EE93FF300E90BA1 /* WalletService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D0E2C4CB2EE8336A00E90BA1 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4CC2EE8337A00E90BA1 /* DataStore.swift */,
+				D0E2C4D02EE83A1700E90BA1 /* DataStore+Auth.swift */,
+				D0E2C4E12EE91CD700E90BA1 /* DataStore+SendMoney.swift */,
+				D0E2C4F02EE93B0600E90BA1 /* DataStore+Transaction.swift */,
+				D04C59392EEA856B00159115 /* SessionStore */,
+				D04C593A2EEA857600159115 /* WalletStore */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		D0E2C4DC2EE9023900E90BA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4E52EE92BB300E90BA1 /* Transaction.swift */,
+				D0E2C4F22EE93E8B00E90BA1 /* TransactionDTO.swift */,
+				D0E2C54D2EE98C0600E90BA1 /* AuthResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0E2C4E92EE9361900E90BA1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C4EA2EE9364400E90BA1 /* Decimal+Utility.swift */,
+				D0E2C4EC2EE9369800E90BA1 /* Date+Utility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D0E2C53D2EE9487900E90BA1 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C53B2EE9482900E90BA1 /* APIService.swift */,
+				D0E2C5402EE94D5500E90BA1 /* URLRequestBuilder.swift */,
+				D0E2C54F2EE9900A00E90BA1 /* APIError.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		D0E2C5462EE95D6000E90BA1 /* APIDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D0E2C53E2EE9488200E90BA1 /* APIDataSource.swift */,
+				D0E2C5472EE95D7900E90BA1 /* RemoteAPIDataSource.swift */,
+				D0E2C54B2EE95DCA00E90BA1 /* LocalAPIDataSource.swift */,
+			);
+			path = APIDataSource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0E2C4622EE81E2C00E90BA1 /* MayaExam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E2C4722EE81E2D00E90BA1 /* Build configuration list for PBXNativeTarget "MayaExam" */;
+			buildPhases = (
+				D0E2C45F2EE81E2C00E90BA1 /* Sources */,
+				D0E2C4602EE81E2C00E90BA1 /* Frameworks */,
+				D0E2C4612EE81E2C00E90BA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D0E2C4652EE81E2C00E90BA1 /* MayaExam */,
+			);
+			name = MayaExam;
+			packageProductDependencies = (
+			);
+			productName = MayaExam;
+			productReference = D0E2C4632EE81E2C00E90BA1 /* MayaExam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0E2C5542EE9981500E90BA1 /* MayaExamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E2C55B2EE9981500E90BA1 /* Build configuration list for PBXNativeTarget "MayaExamTests" */;
+			buildPhases = (
+				D0E2C5512EE9981500E90BA1 /* Sources */,
+				D0E2C5522EE9981500E90BA1 /* Frameworks */,
+				D0E2C5532EE9981500E90BA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0E2C55A2EE9981500E90BA1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D0E2C5562EE9981500E90BA1 /* MayaExamTests */,
+			);
+			name = MayaExamTests;
+			packageProductDependencies = (
+			);
+			productName = MayaExamTests;
+			productReference = D0E2C5552EE9981500E90BA1 /* MayaExamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0E2C45B2EE81E2C00E90BA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D0E2C4622EE81E2C00E90BA1 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D0E2C5542EE9981500E90BA1 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D0E2C4622EE81E2C00E90BA1;
+					};
+				};
+			};
+			buildConfigurationList = D0E2C45E2EE81E2C00E90BA1 /* Build configuration list for PBXProject "MayaExam" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0E2C45A2EE81E2C00E90BA1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D0E2C4642EE81E2C00E90BA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0E2C4622EE81E2C00E90BA1 /* MayaExam */,
+				D0E2C5542EE9981500E90BA1 /* MayaExamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0E2C4612EE81E2C00E90BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E2C4BE2EE8243A00E90BA1 /* AuthConfig.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E2C5532EE9981500E90BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0E2C45F2EE81E2C00E90BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E2C4EF2EE938DC00E90BA1 /* TransactionHistoryViewModel.swift in Sources */,
+				D04C593C2EEA859800159115 /* SessionStore.swift in Sources */,
+				D0E2C4DE2EE9088600E90BA1 /* DefaultsWallet.swift in Sources */,
+				D0E2C4C82EE82BC700E90BA1 /* LoginView.swift in Sources */,
+				D04C59382EEA848A00159115 /* LocalAPIDataSource.swift in Sources */,
+				D0E2C4CD2EE8337C00E90BA1 /* DataStore.swift in Sources */,
+				D0E2C4ED2EE9369C00E90BA1 /* Date+Utility.swift in Sources */,
+				D0E2C5482EE95D8600E90BA1 /* RemoteAPIDataSource.swift in Sources */,
+				D0E2C4F32EE93E8F00E90BA1 /* TransactionDTO.swift in Sources */,
+				D0E2C4BA2EE8211C00E90BA1 /* DashboardView.swift in Sources */,
+				D0E2C4E22EE91CDF00E90BA1 /* DataStore+SendMoney.swift in Sources */,
+				D0E2C4E02EE914D700E90BA1 /* SendMoneyViewModel.swift in Sources */,
+				D0E2C4C62EE8270400E90BA1 /* AuthService.swift in Sources */,
+				D0E2C5502EE9900B00E90BA1 /* APIError.swift in Sources */,
+				D0E2C5412EE94D5A00E90BA1 /* URLRequestBuilder.swift in Sources */,
+				D0E2C4E42EE92B9A00E90BA1 /* SwiftDataConfig.swift in Sources */,
+				D0E2C4D72EE84B6600E90BA1 /* DashboardCard.swift in Sources */,
+				D04C593E2EEA85B900159115 /* WalletStore.swift in Sources */,
+				D0E2C53F2EE9488600E90BA1 /* APIDataSource.swift in Sources */,
+				D0E2C4B92EE8211700E90BA1 /* MainView.swift in Sources */,
+				D0E2C4F12EE93B0D00E90BA1 /* DataStore+Transaction.swift in Sources */,
+				D0E2C4F52EE93FF600E90BA1 /* WalletService.swift in Sources */,
+				D0E2C4D32EE8402E00E90BA1 /* SendMoneyView.swift in Sources */,
+				D0E2C54E2EE98C0A00E90BA1 /* AuthResponse.swift in Sources */,
+				D04C59402EEA870F00159115 /* AppConfig.swift in Sources */,
+				D0E2C4C22EE8260900E90BA1 /* AuthConfig.swift in Sources */,
+				D0E2C4DB2EE84D9200E90BA1 /* DashboardFeaturePlaceholder.swift in Sources */,
+				D0E2C4E62EE92BB700E90BA1 /* Transaction.swift in Sources */,
+				D0E2C4D12EE83A2200E90BA1 /* DataStore+Auth.swift in Sources */,
+				D0E2C4CF2EE8360C00E90BA1 /* KeychainSession.swift in Sources */,
+				D0E2C53C2EE9482C00E90BA1 /* APIService.swift in Sources */,
+				D0E2C4D52EE8404000E90BA1 /* TransactionHistoryView.swift in Sources */,
+				D0E2C4EB2EE9364B00E90BA1 /* Decimal+Utility.swift in Sources */,
+				D0E2C4E82EE9329B00E90BA1 /* PostTransactionView.swift in Sources */,
+				D0E2C4CA2EE82BCE00E90BA1 /* LoginViewModel.swift in Sources */,
+				D0E2C4D92EE84BD100E90BA1 /* DashboardViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E2C5512EE9981500E90BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0E2C55A2EE9981500E90BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E2C4622EE81E2C00E90BA1 /* MayaExam */;
+			targetProxy = D0E2C5592EE9981500E90BA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D0E2C4702EE81E2D00E90BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0E2C4712EE81E2D00E90BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D0E2C4732EE81E2D00E90BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E2C4BD2EE8243A00E90BA1 /* AuthConfig.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MayaExam/MayaExam.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MayaExam/Preview Content\"";
+				DEVELOPMENT_TEAM = XFER24HEJH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MayaExam/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenzodev.MayaExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		D0E2C4742EE81E2D00E90BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E2C4BD2EE8243A00E90BA1 /* AuthConfig.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MayaExam/MayaExam.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MayaExam/Preview Content\"";
+				DEVELOPMENT_TEAM = XFER24HEJH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MayaExam/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenzodev.MayaExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		D0E2C55C2EE9981500E90BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XFER24HEJH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenzodev.MayaExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayaExam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MayaExam";
+			};
+			name = Debug;
+		};
+		D0E2C55D2EE9981500E90BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XFER24HEJH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenzodev.MayaExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayaExam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MayaExam";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0E2C45E2EE81E2C00E90BA1 /* Build configuration list for PBXProject "MayaExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E2C4702EE81E2D00E90BA1 /* Debug */,
+				D0E2C4712EE81E2D00E90BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E2C4722EE81E2D00E90BA1 /* Build configuration list for PBXNativeTarget "MayaExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E2C4732EE81E2D00E90BA1 /* Debug */,
+				D0E2C4742EE81E2D00E90BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E2C55B2EE9981500E90BA1 /* Build configuration list for PBXNativeTarget "MayaExamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E2C55C2EE9981500E90BA1 /* Debug */,
+				D0E2C55D2EE9981500E90BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0E2C45B2EE81E2C00E90BA1 /* Project object */;
+}

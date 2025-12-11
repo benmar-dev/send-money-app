@@ -1,0 +1,11 @@
+//
+//  AuthConfig.xcconfig
+//  MayaExam
+//
+//  Created by Alvin Marana on 12/9/25.
+//
+
+// Default demo username used for local development and testing.
+// Only this user is allowed to log in; all other usernames should be rejected.
+AUTH_USERNAME = demo
+AUTH_PASSWORD_HASH = d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
