@@ -10,6 +10,8 @@ A simple SwiftUI demo app that lets a user log in, view their wallet balance, se
 - Dependency-injected services for testability
 - Unit tests for DataStore and ViewModels
 
+See the full design document **[here](doc/Design.md)**  
+
 ## Requirements
 - Xcode 15+
 - iOS 17+
