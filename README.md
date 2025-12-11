@@ -20,9 +20,10 @@ A simple SwiftUI demo app that lets a user log in, view their wallet balance, se
 2. Open `MayaExam.xcodeproj`  
 3. Build & run (`⌘R`)  
 4. Log in with the demo user below. All other username and passwords are not accepted.
-    user: demo
-    password: pass
 
+###Credentials:
+username: `demo`
+password: `pass`
 
 ## Project Structure
 - `DataStore` — central business/state manager  
